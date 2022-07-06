@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1238649844481031641}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -334,6 +334,7 @@ GameObject:
   - component: {fileID: 1238649845964994216}
   - component: {fileID: 1238649845964994223}
   - component: {fileID: 1238649845964994222}
+  - component: {fileID: 522280492}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -408,3 +409,20 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238649845964994221}
   m_Enabled: 1
+--- !u!114 &522280492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238649845964994221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4c86c84b7916743aac53cb2779d480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensHoriz: 300
+  sensVert: 300
+  lockVertMin: -45
+  lockVertMax: 45
+  invertY: 0
