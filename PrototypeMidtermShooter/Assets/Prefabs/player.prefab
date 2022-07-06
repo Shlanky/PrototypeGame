@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1238649844481031636}
   - component: {fileID: 1238649844481031642}
   - component: {fileID: 1238649844481031641}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 1238649845274052153}
   - component: {fileID: 1238649845274052152}
   - component: {fileID: 1238649845274052159}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 1238649845570168482}
   - component: {fileID: 1238649845570168481}
   - component: {fileID: 1238649845570168480}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: muzzel flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 1238649845964994223}
   - component: {fileID: 1238649845964994222}
   - component: {fileID: 522280492}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
