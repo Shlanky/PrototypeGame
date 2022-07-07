@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 570605854334489883}
   - component: {fileID: 4414055207036986747}
-  - component: {fileID: 2615036691744151259}
+  - component: {fileID: -158833195923392198}
   - component: {fileID: 3281195064965370289}
   - component: {fileID: 1831641438906544855}
   - component: {fileID: 5560053802523483252}
@@ -46,7 +46,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2273929915210527773}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2615036691744151259
+--- !u!114 &-158833195923392198
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60,7 +60,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 6066894608714030747}
   rend: {fileID: 3281195064965370289}
-  HP: 20
+  HP: 15
   shootRate: 1
   bullet: {fileID: 6948801639598060161, guid: 371bcd357a1b7234a84ab8c1fe44d345, type: 3}
 --- !u!23 &3281195064965370289
