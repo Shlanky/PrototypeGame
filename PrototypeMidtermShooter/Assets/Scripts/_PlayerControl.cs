@@ -128,8 +128,6 @@ public class _PlayerControl : MonoBehaviour, iDamageable
                     {
                         isDamageable.takeDamage(weaponDamage);
                     }
-
-
                 }
             }
 

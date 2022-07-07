@@ -61,6 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 6066894608714030747}
   rend: {fileID: 3281195064965370289}
+  bodyColor: {fileID: 2100000, guid: d2f09fe8730d2a1449a6613516827d74, type: 2}
   HP: 15
   viewAngle: 25
   playerFaceSpeed: 2

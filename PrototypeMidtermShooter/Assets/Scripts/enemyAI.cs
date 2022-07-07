@@ -10,6 +10,7 @@ public class enemyAI : MonoBehaviour, iDamageable
     [Header("----------------------------------------------")]
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Renderer rend;
+    [SerializeField] Material bodyColor; //the reason this is a serialized field is in the case we ever change the color of enemy
 
     [Header("Enemy Atrobutes")]
     [Header("----------------------------------------------")]
@@ -149,7 +150,7 @@ public class enemyAI : MonoBehaviour, iDamageable
     {
         rend.material.color = Color.red;
         yield return new WaitForSeconds(0.1f);
-        rend.material.color = Color.white;
+        rend.material.color = bodyColor.color;
     }
 
     IEnumerator shoot()
