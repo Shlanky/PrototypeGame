@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
-
     [SerializeField] int damage;
     [SerializeField] int speed;
     [SerializeField] Rigidbody rb;
@@ -12,25 +11,23 @@ public class bullet : MonoBehaviour
     [SerializeField] GameObject hitEffect;
 
 
-
     // Start is called before the first frame update
     void Start()
     {
-        rb.velocity = (gamemanager.instance.player.transform.position - transform.position).normalized * speed;
+        rb.velocity = (gameManager.instance.player.transform.position - transform.position).normalized * speed;
         Destroy(gameObject, destroyTime);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<IDamagable>() != null)
+        if (other.GetComponent<iDamageable>() != null)
         {
-            IDamagable isDamageable = other.GetComponent<IDamagable>();
+            iDamageable isDamageable = other.GetComponent<iDamageable>();
+
             isDamageable.takeDamage(damage);
+
         }
-
         Instantiate(hitEffect, transform.position, hitEffect.transform.rotation);
-
         Destroy(gameObject);
     }
-
 }

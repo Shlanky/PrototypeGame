@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1238649844481031638}
   - component: {fileID: 1238649844481031637}
   - component: {fileID: 1238649844481031636}
-  - component: {fileID: 1238649844481031642}
   - component: {fileID: 1238649844481031641}
+  - component: {fileID: 2108621074}
   m_Layer: 7
   m_Name: player
   m_TagString: Player
@@ -86,29 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1238649844481031642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1238649844481031640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 954de9610c97f2c4aa1256576a4b7c55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 1238649844481031641}
-  HP: 10
-  playerSpeed: 5
-  sprintMult: 2
-  jumpHeight: 6
-  jumps: 2
-  gravityValue: 15
-  shootrate: 0.2
-  weaponDamage: 4
-  hitEffectSpark: {fileID: 4352554770046417612, guid: 0091ed0348b0bff41a28a46cd339c7fb, type: 3}
-  muzzleFlash: {fileID: 1238649845570168487}
 --- !u!143 &1238649844481031641
 CharacterController:
   m_ObjectHideFlags: 0
@@ -127,6 +104,29 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2108621074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238649844481031640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f45a2f56d8afce94e9e4c66aaf0b9c09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1238649844481031641}
+  HP: 12
+  playerSpeed: 6
+  sprintMult: 2
+  jumpHeight: 6
+  gravityValue: 20
+  jumps: 2
+  shootRate: 0.1
+  weaponDamage: 10
+  hitEffectSpark: {fileID: 4352554770046417612, guid: 0091ed0348b0bff41a28a46cd339c7fb, type: 3}
+  muzzleFlash: {fileID: 1238649845570168487}
 --- !u!1 &1238649845274052157
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,8 +421,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a4c86c84b7916743aac53cb2779d480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensHoriz: 300
-  sensVert: 300
-  lockVertMin: -45
-  lockVertMax: 45
-  invertY: 0
+  senseHori: 300
+  senseVert: 300
+  locVertMax: 45
+  locVertMin: -45
+  invert: 0

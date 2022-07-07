@@ -62,7 +62,7 @@ MonoBehaviour:
   rend: {fileID: 3281195064965370289}
   HP: 20
   shootRate: 1
-  bullet: {fileID: 0}
+  bullet: {fileID: 6948801639598060161, guid: 371bcd357a1b7234a84ab8c1fe44d345, type: 3}
 --- !u!23 &3281195064965370289
 MeshRenderer:
   m_ObjectHideFlags: 0

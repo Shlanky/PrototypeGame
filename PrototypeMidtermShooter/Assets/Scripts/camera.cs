@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class camera : MonoBehaviour
 {
+    [SerializeField] int senseHori;
+    [SerializeField] int senseVert;
+
+    [SerializeField] int locVertMax;
+    [SerializeField] int locVertMin;
+
+    [SerializeField] bool invert;
+    float vexRotaion = 0;
+
+
     // Start is called before the first frame update
-    [SerializeField] int sensHoriz;
-    [SerializeField] int sensVert;
-
-    [SerializeField] int lockVertMin;
-    [SerializeField] int lockVertMax;
-
-    [SerializeField] bool invertY;
-    
-    float xRotation = 0f;
-
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -22,30 +22,31 @@ public class camera : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void LateUpdate()
+    void LateUpdate()
     {
-        //get the input
-        float mouseX = Input.GetAxis("Mouse X") * sensHoriz * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * sensVert * Time.deltaTime;
 
-        //invert the look
-        if (invertY)
+        //getting the input
+        float MouseX = Input.GetAxis("Mouse X") * senseHori * Time.deltaTime;
+        float MouseY = Input.GetAxis("Mouse Y") * senseVert * Time.deltaTime;
+
+        //inverting the look
+        if (invert)
         {
-            xRotation += mouseY;
+            vexRotaion += MouseY;
         }
         else
         {
-            xRotation -= mouseY;
+            vexRotaion -= MouseY;
         }
 
+
         //clamp the angle the camera can rotate to
-        xRotation = Mathf.Clamp(xRotation, lockVertMin, lockVertMax);
+        vexRotaion = Mathf.Clamp(vexRotaion, locVertMin, locVertMax);
 
         //rotate the camera on the x axis
-        transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
+        transform.localRotation = Quaternion.Euler(vexRotaion, 0, 0);
 
         //rotate the transform
-        transform.parent.Rotate(Vector3.up * mouseX);
-
+        transform.parent.Rotate(Vector3.up * MouseX);
     }
 }

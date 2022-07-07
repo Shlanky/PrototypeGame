@@ -3,48 +3,46 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class enemyAI : MonoBehaviour, IDamagable
+public class enemyAI : MonoBehaviour, iDamageable
 {
+
     [Header("Components")]
+    [Header("----------------------------------------------")]
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Renderer rend;
 
-    [Header("------------------------------")]
-
-    [Header("Enemy Attributes")]
+    [Header("Enemy Atrobutes")]
+    [Header("----------------------------------------------")]
     [SerializeField] int HP;
-    // Start is called before the first frame update
 
 
-    [Header("------------------------------")]
 
-    [Header("Enemy Attributes")]
+    [Header("Enemy Atrobutes")]
+    [Header("----------------------------------------------")]
     [SerializeField] float shootRate;
     [SerializeField] GameObject bullet;
 
 
-
-
     bool canShoot = true;
     bool playerInRange;
-    
 
+    // Start is called before the first frame update
     void Start()
     {
-        //gamemanager.instance.playerScript.takeDamage(1);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        agent.SetDestination(gameManager.instance.player.transform.position);
 
-        agent.SetDestination(gamemanager.instance.player.transform.position);
-
-        if (agent.stoppingDistance <= agent.stoppingDistance && canShoot)
+        if (agent.remainingDistance <= agent.stoppingDistance & canShoot)
         {
             StartCoroutine(shoot());
         }
     }
+
     public void takeDamage(int dmg)
     {
         HP -= dmg;
@@ -54,7 +52,6 @@ public class enemyAI : MonoBehaviour, IDamagable
         {
             Destroy(gameObject);
         }
-
     }
 
     IEnumerator flashColor()
@@ -64,7 +61,6 @@ public class enemyAI : MonoBehaviour, IDamagable
         rend.material.color = Color.white;
     }
 
-
     IEnumerator shoot()
     {
         canShoot = false;
@@ -72,6 +68,7 @@ public class enemyAI : MonoBehaviour, IDamagable
         Instantiate(bullet, transform.position, bullet.transform.rotation);
 
         yield return new WaitForSeconds(shootRate);
+
         canShoot = true;
     }
 }

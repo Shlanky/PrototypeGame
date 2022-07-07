@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 8094361974425002801}
   - component: {fileID: 129766719830735534}
   - component: {fileID: 3473466410349201360}
-  - component: {fileID: 1468153825}
+  - component: {fileID: 1797925041}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -278,8 +278,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1468153825}
-        m_TargetAssemblyTypeName: buttonFunctions, Assembly-CSharp
+      - m_Target: {fileID: 1797925041}
+        m_TargetAssemblyTypeName: buttonFunction, Assembly-CSharp
         m_MethodName: quit
         m_Mode: 1
         m_Arguments:
@@ -290,7 +290,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1468153825
+--- !u!114 &1797925041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1640137884630166500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 061baeaf8e49066468a07436a678c1f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 52e27518c26dbb34ab71250b5a7a1a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1722409703357239005
@@ -711,7 +711,7 @@ GameObject:
   - component: {fileID: 6538896379727486818}
   - component: {fileID: 8551310227133601697}
   - component: {fileID: 7527923459639822690}
-  - component: {fileID: 1387663572}
+  - component: {fileID: 661321890}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -822,8 +822,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1387663572}
-        m_TargetAssemblyTypeName: buttonFunctions, Assembly-CSharp
+      - m_Target: {fileID: 661321890}
+        m_TargetAssemblyTypeName: buttonFunction, Assembly-CSharp
         m_MethodName: resume
         m_Mode: 1
         m_Arguments:
@@ -833,8 +833,8 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
---- !u!114 &1387663572
+        m_CallState: 2
+--- !u!114 &661321890
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -843,7 +843,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3630844288055922116}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 061baeaf8e49066468a07436a678c1f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 52e27518c26dbb34ab71250b5a7a1a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4039096159120284201
@@ -858,7 +858,7 @@ GameObject:
   - component: {fileID: 2884467511150279632}
   - component: {fileID: 769007326068893732}
   - component: {fileID: 2445438896242070702}
-  - component: {fileID: 1413325414}
+  - component: {fileID: 566517721}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -969,8 +969,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1413325414}
-        m_TargetAssemblyTypeName: buttonFunctions, Assembly-CSharp
+      - m_Target: {fileID: 566517721}
+        m_TargetAssemblyTypeName: buttonFunction, Assembly-CSharp
         m_MethodName: quit
         m_Mode: 1
         m_Arguments:
@@ -981,7 +981,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1413325414
+--- !u!114 &566517721
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -990,7 +990,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4039096159120284201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 061baeaf8e49066468a07436a678c1f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 52e27518c26dbb34ab71250b5a7a1a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4832988023674545150
@@ -1044,8 +1044,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   playerScript: {fileID: 0}
-  PauseMenu: {fileID: 979269020773090531}
-  PlayerDeadMenu: {fileID: 1951827240972968912}
+  pauseMenu: {fileID: 979269020773090531}
+  playerDeadMenu: {fileID: 1951827240972968912}
   playerDamageFlash: {fileID: 5697245608215408864}
   HPBar: {fileID: 3047026513531552849}
   paused: 0
@@ -1956,7 +1956,7 @@ GameObject:
   - component: {fileID: 4505077786423172856}
   - component: {fileID: 7801471517160029482}
   - component: {fileID: 6716100964492218686}
-  - component: {fileID: 421496852}
+  - component: {fileID: 107291029}
   m_Layer: 5
   m_Name: Respawn
   m_TagString: Untagged
@@ -2067,8 +2067,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 421496852}
-        m_TargetAssemblyTypeName: buttonFunctions, Assembly-CSharp
+      - m_Target: {fileID: 107291029}
+        m_TargetAssemblyTypeName: buttonFunction, Assembly-CSharp
         m_MethodName: respawn
         m_Mode: 1
         m_Arguments:
@@ -2079,7 +2079,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &421496852
+--- !u!114 &107291029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2088,6 +2088,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8619775819404085970}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 061baeaf8e49066468a07436a678c1f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 52e27518c26dbb34ab71250b5a7a1a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
