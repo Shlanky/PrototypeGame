@@ -11,6 +11,7 @@
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 { "pid": 0, "tid": 1, "ts": 1657231669923947, "dur": 844056, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1657231669925108, "dur": 49593, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1657231669974944, "dur": 782911, "ph": "X", "name": "Run Backend", "args": {} },
@@ -3126,6 +3127,15 @@
 { "pid": 0, "tid": 1, "ts": 1657208584821065, "dur": 1254, "ph": "X", "name": "ChromeTraceHeader", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1657208584825788, "dur": 1127, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+=======
+{ "pid": 0, "tid": 1, "ts": 1657208583605446, "dur": 1212169, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657208583606768, "dur": 58743, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657208583665828, "dur": 1141301, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657208584807143, "dur": 10470, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657208584821065, "dur": 1254, "ph": "X", "name": "ChromeTraceHeader", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1657208584825788, "dur": 1127, "ph": "X", "name": "", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+>>>>>>> parent of 44cb85bc (enemy tracking)
 ,{ "pid":12345, "tid":0, "ts":1657208583721815, "dur":2116, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1657208583723951, "dur":659, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
 ,{ "pid":12345, "tid":0, "ts":1657208583724702, "dur":41, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
@@ -4409,6 +4419,9 @@
 ,{ "pid":12345, "tid":0, "ts":1657208584760651, "dur":3598, "ph":"X", "name": "ProfilerWriteOutput" }
 ,{ "pid": 0, "tid": 1, "ts": 1657208584827788, "dur": 5465, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1657208584823727, "dur": 9583, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+<<<<<<< HEAD
+>>>>>>> parent of 44cb85bc (enemy tracking)
+=======
 >>>>>>> parent of 44cb85bc (enemy tracking)
 {}
 
