@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1831641438906544855}
   - component: {fileID: 5560053802523483252}
   - component: {fileID: 6066894608714030747}
+  - component: {fileID: 944190440}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -60,8 +61,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 6066894608714030747}
   rend: {fileID: 3281195064965370289}
-  bodyColor: {fileID: 2100000, guid: d2f09fe8730d2a1449a6613516827d74, type: 2}
   HP: 15
+  viewAngle: 25
+  playerFaceSpeed: 2
+  roamRadius: 3
   shootRate: 1
   bullet: {fileID: 6948801639598060161, guid: 371bcd357a1b7234a84ab8c1fe44d345, type: 3}
 --- !u!23 &3281195064965370289
@@ -155,6 +158,19 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!135 &944190440
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2273929915210527773}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 8
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4410242474149061767
 GameObject:
   m_ObjectHideFlags: 0

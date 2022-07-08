@@ -1,36 +1,10 @@
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
 { "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-{ "pid": 35942, "tid": 1, "ts": 1657226778044793, "dur": 185712, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657226778045600, "dur": 44819, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657226778195514, "dur": 3523, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657226778199039, "dur": 31457, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657226778199578, "dur": 23894, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657226778233982, "dur": 896, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657226778233319, "dur": 1580, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-=======
-{ "pid": 35942, "tid": 1, "ts": 1657238753894790, "dur": 205032, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657238753895743, "dur": 49531, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657238754057559, "dur": 3671, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657238754061232, "dur": 38578, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657238754061814, "dur": 30122, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657238754104073, "dur": 1022, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657238754103256, "dur": 1864, "ph": "X", "name": "Write chrome-trace events", "args": {} },
->>>>>>> Temporary
-=======
-=======
->>>>>>> parent of 44cb85bc (enemy tracking)
-{ "pid": 35942, "tid": 1, "ts": 1657205818168345, "dur": 282856, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657205818169198, "dur": 66834, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657205818391778, "dur": 4795, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657205818396582, "dur": 54574, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657205818397530, "dur": 43768, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657205818457749, "dur": 1472, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1657205818455993, "dur": 3327, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-<<<<<<< HEAD
->>>>>>> parent of 44cb85bc (enemy tracking)
-=======
->>>>>>> parent of 44cb85bc (enemy tracking)
+{ "pid": 35942, "tid": 1, "ts": 1657240059432775, "dur": 222175, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1657240059433577, "dur": 53555, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1657240059610914, "dur": 3887, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1657240059614803, "dur": 40104, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1657240059615733, "dur": 28087, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1657240059660943, "dur": 960, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1657240059659817, "dur": 2113, "ph": "X", "name": "Write chrome-trace events", "args": {} },

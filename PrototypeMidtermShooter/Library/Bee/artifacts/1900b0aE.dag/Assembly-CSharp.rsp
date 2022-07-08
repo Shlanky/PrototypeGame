@@ -353,7 +353,7 @@
 "Assets/Scripts/buttonFunction.cs"
 "Assets/Scripts/camera.cs"
 "Assets/Scripts/enemyAI.cs"
-"Assets/Scripts/gameManager.cs"
+"Assets/Scripts/gamemanager.cs"
 "Assets/Scripts/iDamageable.cs"
 "Assets/Scripts/_PlayerControl.cs"
 -langversion:9.0
